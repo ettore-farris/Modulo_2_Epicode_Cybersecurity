@@ -11,7 +11,7 @@ while True:
     """)).lower()  
         if figura == "a":
             l = float(input("Inserisci il valore del lato: "))
-            perimetro_quadrato = l**2
+            perimetro_quadrato = l*4
             print(f"Il perimetro del nostro quadrato vale {round(perimetro_quadrato, 2)}")
             break
         elif figura == "b":
