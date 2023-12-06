@@ -6,10 +6,9 @@ COMPLEX_PASSWORD = 20
 #generatore di password
 def password_generator(answer):
     all_characters = ascii_letters + digits + punctuation
-    weak_password_list = [choice(ascii_letters) for char in range (SIMPLE_PASSWORD)]
-    strong_password_list = [choice(all_characters) for sym in range(COMPLEX_PASSWORD)]
-    weak_password = "".join(weak_password_list)
-    strong_password = "".join(strong_password_list)
+    weak_password = "".join([choice(ascii_letters) for char in range (SIMPLE_PASSWORD)])
+    strong_password = "".join([choice(all_characters) for sym in range(COMPLEX_PASSWORD)])
+
     if answer == "a":
         return weak_password
     elif answer == "b":
